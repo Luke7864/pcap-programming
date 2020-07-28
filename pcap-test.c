@@ -68,7 +68,7 @@ void callback(u_char *useless, const struct pcap_pkthdr *pkthdr, const u_char *p
 		printf("Src Address: %s\n", inet_ntoa(iph->ip_src));
 		printf("Dst Address: %s\n", inet_ntoa(iph->ip_dst));
 
-	//If it was TCP
+	//If it has TCP
 	//Print TCP Info
 		if (iph -> ip_p == IPPROTO_TCP)
 		{
